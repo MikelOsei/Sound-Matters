@@ -3,6 +3,8 @@ Sound Matters is an interactive artwork that combines sound as input, with 3D vi
 
 Please see my artist statement for more details.
 
+Created as Assignment 1 for UWaterloo's CS/FINE 383 Winter 2026 offering.
+
 ## Video Demo 
 https://drive.google.com/file/d/1ZzgPo7GdybzeVsPy74j0Szc5DHqWJ8NM/view
 
@@ -12,6 +14,3 @@ https://drive.google.com/file/d/1ZzgPo7GdybzeVsPy74j0Szc5DHqWJ8NM/view
 * Press R to reset the scene.
 * Double click to show/hide the mouse pointer.
 * Press SPACE to trigger the burst animation without using audio.
-
-
-## Cloning
