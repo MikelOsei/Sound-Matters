@@ -55,13 +55,20 @@ class Agent {
 
   update() {
     this.checkTimers();
-    let stateFunctions = [
-      this.updateStill,
-      this.updateFalling,
-      this.updateWaiting,
-      this.updateRising,
-    ];
-    stateFunctions[this.state]();
+    switch (this.state) {
+      case STILL:
+        this.updateStill();
+        break;
+      case FALLING:
+        this.updateFalling();
+        break;
+      case WAITING:
+        this.updateWaiting();
+        break;
+      case RISING:
+        this.updateRising();
+        break;
+    }
   }
 
   draw() {
