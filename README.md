@@ -14,3 +14,4 @@ https://drive.google.com/file/d/1ZzgPo7GdybzeVsPy74j0Szc5DHqWJ8NM/view
 * Press R to reset the scene.
 * Double click to show/hide the mouse pointer.
 * Press SPACE to trigger the burst animation without using audio.
+* Please adjust (lower) numAgents with the settings GUI if performance starts to slow.
