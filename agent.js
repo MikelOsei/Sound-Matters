@@ -90,17 +90,20 @@ class Agent {
     pop();
   }
 
-  burst(forceMin = -20) {
+  burst(forceMin = -10) {
     this.state = FALLING;
 
-    let len = dist(this.x, this.y, 0, 0) || 0.0001;
-    this.x /= len;
-    this.y /= len;
+    let x = this.x;
+    let y = this.y;
+  
+    let len = dist(x, y, 0, 0) || 0.0001;
+    x /= len;
+    y /= len;
 
     let force = random(forceMin, 20);
 
-    this.velocityX += this.x * force;
-    this.velocityY += this.y * force;
+    this.velocityX += x * force;
+    this.velocityY += y * force;
     this.velocityZ += random(-10, 5);
   }
 
@@ -147,6 +150,7 @@ class Agent {
 
   updateFalling() {
     this.timers = [];
+
     // a lot of magic numbers live here, BUT they're mostly aesthetic choices :)
     this.mass = map(this.rad, 5, 40, 0.6, 2.0);
     // slowmo: random(0.001, 0.1)
