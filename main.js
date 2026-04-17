@@ -23,7 +23,7 @@ let p = {
   agentR: 30,
   agentRMin: 1,
 
-  sphereR: 2.25,
+  sphereR: 3,
   sphereRMin: 1,
   sphereRMax: 3,
   sphereRStep: 0.25,
